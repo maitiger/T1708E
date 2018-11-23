@@ -1,0 +1,48 @@
+﻿@model WebApplication2.Models.Song
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Song</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.songname)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.songname)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.songSinger)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.songSinger)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.songAuthor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.songAuthor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Thumnail)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Thumnail)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Link)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Link)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
